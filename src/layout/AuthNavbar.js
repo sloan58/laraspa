@@ -12,6 +12,8 @@ import {
 } from 'react-bootstrap'
 import Gravatar from 'react-gravatar'
 import { useLocation } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSignOutAlt, faCog } from '@fortawesome/free-solid-svg-icons'
 
 const AuthNavbar = () => {
   const location = useLocation()
@@ -69,9 +71,18 @@ const AuthNavbar = () => {
               id='basic-nav-dropdown'
               alignRight
             >
-              <NavDropdown.Item onClick={logout}>Logout</NavDropdown.Item>
+              <NavDropdown.Item onClick={logout} className='text-center'>
+                <span>Logout</span>
+                <FontAwesomeIcon
+                  icon={faSignOutAlt}
+                  className='float-right mt-1'
+                />
+              </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href='#action/3.4'>Settings</NavDropdown.Item>
+              <NavDropdown.Item href='#action/3.4' className='text-center'>
+                <span>Settings</span>
+                <FontAwesomeIcon icon={faCog} className='float-right mt-1' />
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

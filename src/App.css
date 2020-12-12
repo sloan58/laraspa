@@ -14,9 +14,17 @@ body {
   border-width: 3px !important;
 }
 
+/* Make Navbar dropdown look nice */
 .dropdown-menu {
   border: 0;
   -webkit-box-shadow: 1px 8px 8px 2px #999;
   -moz-box-shadow: 1px 8px 8px 2px #999;
   box-shadow: 1px 8px 8px 2px #999;
+}
+
+.fa-cog {
+  color: #dc3545;
+}
+.fa-sign-out-alt {
+  color: #dc3545;
 }
