@@ -11,7 +11,7 @@ body {
 
 /* Make Navbar borders thicker */
 .border-3 {
-  border-width: 3px !important;
+  border-width: 2px !important;
 }
 
 /* Make Navbar dropdown look nice */
@@ -23,8 +23,8 @@ body {
 }
 
 .fa-cog {
-  color: #dc3545;
+  color: #5c121a;
 }
 .fa-sign-out-alt {
-  color: #dc3545;
+  color: #5c121a;
 }

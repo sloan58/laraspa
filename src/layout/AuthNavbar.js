@@ -57,7 +57,7 @@ const AuthNavbar = () => {
               Tables
             </Nav.Link>
           </Nav>
-          <Nav pullright='true'>
+          <Nav pullright='true' className='mr-2'>
             <NavDropdown
               title={
                 <Gravatar
@@ -72,16 +72,16 @@ const AuthNavbar = () => {
               alignRight
             >
               <NavDropdown.Item onClick={logout} className='text-center'>
-                <span>Logout</span>
                 <FontAwesomeIcon
                   icon={faSignOutAlt}
-                  className='float-right mt-1'
+                  className='float-left mt-1'
                 />
+                <span>Logout</span>
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href='#action/3.4' className='text-center'>
+                <FontAwesomeIcon icon={faCog} className='float-left mt-1' />
                 <span>Settings</span>
-                <FontAwesomeIcon icon={faCog} className='float-right mt-1' />
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
